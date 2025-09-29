@@ -1,11 +1,22 @@
-import { DivColor } from "./styles";
+import React from 'react';
+import Header from '../../components/Header';
+import SectionHero from './SectionHero/intex';
+import SectionAbout from './SectionAbout';
+import SectionAdvantages from './SectionAdvantages';
+import SectionCars from './SectionCars';
+import Footer from '../../components/Footer';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <DivColor>
-      <h1>Hello</h1>
-    </DivColor>
-  )
-}
+    <>
+      <Header />
+      <SectionHero />
+      <SectionAbout />
+      <SectionAdvantages />
+      <SectionCars />
+      <Footer />
+      </>
+  );
+};
 
-export default Home
+export default Home;
