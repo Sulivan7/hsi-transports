@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# HSI Transports
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[🔗 Acesse o site](https://hsi-delta.vercel.app/)
 
-Currently, two official plugins are available:
+Este é o site da HSI Transports, desenvolvido em **React** com **TypeScript** e **Vite**. O projeto apresenta informações sobre a empresa, vantagens, frota, formulário de agendamento e contato via WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## React Compiler
+- **React**
+- **TypeScript**
+- **Vite**
+- **Styled-components**
+- **React Router DOM**
+- **Framer Motion**
+- **React Icons**
+- **ESLint & Prettier**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estrutura de Pastas
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```
+src/
+  assets/
+  components/
+  context/
+  pages/
+    Home/
+  routes/
+  styles/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Funcionalidades
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+- **Tema claro/escuro** com troca automática de logo.
+- **Layout responsivo** para desktop, tablet e mobile.
+- **Menu hambúrguer animado** no mobile.
+- **Formulário de agendamento** com máscaras manuais nos campos.
+- **Seções institucionais**: Sobre, Vantagens, Frota.
+- **Botão WhatsApp** para contato rápido.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Como rodar o projeto
+
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Rode o projeto em modo desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+3. Acesse [http://localhost:5173](http://localhost:5173) no navegador.
+
+## Personalização
+
+- Para alterar imagens, substitua os arquivos em `src/assets/images`.
+- Para editar temas, modifique `src/styles/themes.ts`.
+- Para adicionar novas rotas, edite `src/routes/index.tsx`.
+
+---
