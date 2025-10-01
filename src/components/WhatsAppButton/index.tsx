@@ -6,12 +6,10 @@ interface WhatsAppProps {
   message?: string;
 }
 
-const WhatsAppButton: React.FC<WhatsAppProps> = ({
-  phoneNumber,
-  message,
-}) => {
+const WhatsAppButton: React.FC<WhatsAppProps> = ({ phoneNumber, message }) => {
   const defaultMessage =
-    message || 'Olá! Gostaria de solicitar uma cotação para transporte executivo.';
+    message ||
+    'Olá! Gostaria de solicitar uma cotação para transporte executivo.';
 
   const encodedMessage = encodeURIComponent(defaultMessage);
   const cleanPhoneNumber = phoneNumber.replace(/\D/g, '');

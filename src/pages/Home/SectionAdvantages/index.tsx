@@ -21,8 +21,8 @@ const SectionAdvantages: React.FC = () => {
           <FaShieldAlt size={ICON_SIZE} />
           <h3>Segurança</h3>
           <p>
-            Priorizamos a segurança e a tranquilidade de nossos clientes ao longo
-            de suas viagens.
+            Priorizamos a segurança e a tranquilidade de nossos clientes ao
+            longo de suas viagens.
           </p>
         </AdvantageCard>
 

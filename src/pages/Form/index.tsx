@@ -15,6 +15,8 @@ import {
   HomeButton,
 } from './styles';
 
+// Refazer toda a pagina de formulário !!
+
 interface FormData {
   // Solicitante
   requesterName: string;
@@ -77,7 +79,7 @@ const Form = () => {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => {
     const { name, value, type } = e.target;
     if (type === 'checkbox') {
@@ -282,7 +284,9 @@ const Form = () => {
               checked={formData.addStopOrigin}
               onChange={handleChange}
             />
-            <Label htmlFor="addStopOrigin">Adicionar uma parada na origem?</Label>
+            <Label htmlFor="addStopOrigin">
+              Adicionar uma parada na origem?
+            </Label>
           </CheckboxGroup>
           {formData.addStopOrigin && (
             <FieldGroup>
@@ -371,7 +375,9 @@ const Form = () => {
               checked={formData.addStopDestination}
               onChange={handleChange}
             />
-            <Label htmlFor="addStopDestination">Adicionar uma parada no destino?</Label>
+            <Label htmlFor="addStopDestination">
+              Adicionar uma parada no destino?
+            </Label>
           </CheckboxGroup>
           {formData.addStopDestination && (
             <FieldGroup>
@@ -393,7 +399,9 @@ const Form = () => {
           {/* Motorista Aguarda */}
           <FieldGroup>
             <div>
-              <Label htmlFor="driverWait">O motorista irá aguardar no destino?</Label>
+              <Label htmlFor="driverWait">
+                O motorista irá aguardar no destino?
+              </Label>
               <CheckboxGroup>
                 <Input
                   type="checkbox"

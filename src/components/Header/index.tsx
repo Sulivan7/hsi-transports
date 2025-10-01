@@ -32,9 +32,15 @@ const Header: React.FC = () => {
 
       <Navigation isMenuOpen={isMenuOpen}>
         <ul onClick={handleLinkClick}>
-          <li><a href="/#about">Sobre</a></li>
-          <li><a href="/#advantages">Vantagens</a></li>
-          <li><a href="/#fleet">Frota</a></li>
+          <li>
+            <a href="/#about">Sobre</a>
+          </li>
+          <li>
+            <a href="/#advantages">Vantagens</a>
+          </li>
+          <li>
+            <a href="/#fleet">Frota</a>
+          </li>
           <li>
             <Link to="/form" className="schedule-button">
               Agendar Agora

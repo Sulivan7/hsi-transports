@@ -134,16 +134,20 @@ export const Label = styled.label`
 
 const FormFieldBase = css`
   padding: 10px;
-  border: 1px solid ${({ theme }: { theme: DefaultTheme }) => theme.textSecondary + '30'};
+  border: 1px solid
+    ${({ theme }: { theme: DefaultTheme }) => theme.textSecondary + '30'};
   border-radius: 4px;
   font-size: 16px;
   color: ${({ theme }: { theme: DefaultTheme }) => theme.textPrimary};
   background-color: ${({ theme }: { theme: DefaultTheme }) => theme.background};
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 
   &:focus {
     border-color: ${({ theme }: { theme: DefaultTheme }) => theme.secondary};
-    box-shadow: 0 0 0 3px ${({ theme }: { theme: DefaultTheme }) => theme.secondary + '30'};
+    box-shadow: 0 0 0 3px
+      ${({ theme }: { theme: DefaultTheme }) => theme.secondary + '30'};
     outline: none;
   }
 `;

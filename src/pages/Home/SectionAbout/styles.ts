@@ -18,7 +18,6 @@ export const ContentWrapper = styled.div`
   align-items: center;
   gap: 60px;
 
-
   @media (max-width: 900px) {
     flex-direction: column;
     gap: 40px;

@@ -45,7 +45,7 @@ export const TextContainer = styled.div`
     color: inherit;
 
     @media (max-width: 600px) {
-        font-size: 38px;
+      font-size: 38px;
     }
   }
 
@@ -68,6 +68,7 @@ export const QuoteButton = styled(Link)`
   display: inline-block;
 
   &:hover {
-    background-color: ${({ theme }: { theme: DefaultTheme }) => theme.secondary};
+    background-color: ${({ theme }: { theme: DefaultTheme }) =>
+      theme.secondary};
   }
 `;

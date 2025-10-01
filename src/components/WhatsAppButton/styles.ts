@@ -16,7 +16,9 @@ export const ButtonLink = styled.a`
   background-color: ${ThemeColors.light.whats};
   color: ${ThemeColors.light.background};
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s;
 
   &:hover {
     transform: scale(1.1);

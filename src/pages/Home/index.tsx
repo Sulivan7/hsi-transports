@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <SectionAdvantages />
       <SectionCars />
       <Footer />
-      </>
+    </>
   );
 };
 

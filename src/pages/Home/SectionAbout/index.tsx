@@ -1,5 +1,10 @@
 import React from 'react';
-import { AboutSection, ContentWrapper, TextContainer, ImageContainer} from './styles';
+import {
+  AboutSection,
+  ContentWrapper,
+  TextContainer,
+  ImageContainer,
+} from './styles';
 import ImageAbout from '../../../assets/images/ImageAbout.jpg';
 
 const SectionAbout: React.FC = () => {
@@ -9,8 +14,8 @@ const SectionAbout: React.FC = () => {
         <TextContainer>
           <h1>
             Contamos com uma equipe de profissionais experientes, qualificados e
-            discretos, priorizando sempre a segurança, pontualidade, privacidade,
-            conforto e confiança dos nossos clientes.
+            discretos, priorizando sempre a segurança, pontualidade,
+            privacidade, conforto e confiança dos nossos clientes.
           </h1>
           <p>
             A HSI Transports conquistou respeito no setor pela qualidade e

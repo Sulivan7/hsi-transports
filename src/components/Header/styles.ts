@@ -8,8 +8,6 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   background: ${({ theme }) => theme.background};
-
-
 `;
 
 export const LogoImage = styled.img`
@@ -80,12 +78,14 @@ export const Navigation = styled.nav<{ isMenuOpen: boolean }>`
     left: 0;
     width: 100vw;
     background: ${({ theme }) => theme.sectionBg};
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transform: ${({ isMenuOpen }) =>
       isMenuOpen ? 'translateY(0)' : 'translateY(-120%)'};
     opacity: ${({ isMenuOpen }) => (isMenuOpen ? 1 : 0)};
     pointer-events: ${({ isMenuOpen }) => (isMenuOpen ? 'auto' : 'none')};
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
     z-index: 10;
 
     ul {

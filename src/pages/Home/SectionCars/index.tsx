@@ -1,7 +1,6 @@
 import { CarsSection, CarsGrid, CarCard } from './styles';
 
 const SectionCars: React.FC = () => {
-
   return (
     <CarsSection id="fleet">
       <h1>Frotas</h1>
